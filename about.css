@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(248, 147, 15, 0.603), rgba(0, 0, 0, 0.104));
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.162), rgba(154, 138, 14, 0.216)), url('banner3.jpeg');
+    background-size: cover;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d95e18;
+}
+
+.about-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(to bottom, rgba(248, 147, 15, 0.218), rgba(0, 0, 0, 0.104));
+    border-radius: 10px;
+    border: 3px solid grey;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #e67e22;
+}
+
+.founder-profile {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.founder-profile img {
+    width: 190px;
+    height: auto;
+}
+
+.founder-info {
+    padding: 15px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 30%;
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.profile-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Other existing styles remain unchanged */
+
+.social-media-links {
+    margin-top: 20px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.social-media-links a {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center items vertically */
+    margin-right: 15px; /* Space between items */
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-media-links a:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.social-media-links a:hover {
+    color: #e67e22;
+}
+
+/* The rest of the styles remain unchanged */
+
+
+.social-icon {
+    width: 55px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.footer {
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-nav a,
+.social-media a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover,
+.social-media a:hover {
+    color: #ddd;
+}
+
+.social-media {
+    margin-top: 10px;
+}

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif; /* Basic font for the body */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    background: url('lantern0.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+}
+
+.account-container {
+    display: flex; /* Center the form */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height of the viewport */
+    backdrop-filter: blur(5px); /* Blur effect for the background */
+}
+
+.form-box {
+    background: linear-gradient(to bottom right, rgba(67, 67, 67, 0.337), rgba(206, 141, 2, 0.595)); /* Gradient background */
+    padding: 30px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    width: 550px; /* Fixed width for form */
+    height: 400px;
+}
+
+.highlight {
+    color: #f39c12; /* Golden yellow color */
+}
+
+h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Margin above and below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for inputs */
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+input:focus {
+    border-color: #f39c12; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Padding inside button */
+    background-color: #e67e22; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1em; /* Slightly larger font for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #d95e18; /* Darker shade on hover */
+    transform: translateY(-3px); /* Move button upwards */
+}
+
+p {
+    text-align: center; /* Center the paragraph */
+}
+
+a {
+    color: #e67e22; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gathr - Transport & Logistics Vendors</title>
+    <style>
+        /* Navigation Bar */
+        body {
+            background: linear-gradient(135deg, rgba(239, 176, 2, 0.515), rgba(93, 6, 169, 0.329));
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.162), rgba(154, 138, 14, 0.216)), url('banner3.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 1.8em;
+            font-family: 'Cursive', sans-serif;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1.1em;
+        }
+
+        .nav-links a:hover {
+            color: #d95e18;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        /* Sidebar Filters */
+        .filter-sidebar {
+            width: 20%;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(239, 176, 2, 0.515), rgba(93, 6, 169, 0.405));
+            border-right: 1px solid #ddd;
+        }
+
+        .filter-sidebar h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .filter-section {
+            margin-bottom: 20px;
+        }
+
+        .filter-section h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .service-search {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Vendor List */
+        .vendor-list {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .vendor-list h2 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .vendor-card {
+            display: inline-block;
+            width: 25%;
+            margin: 0 10px 20px;
+            padding: 15px;
+            margin-right: 70px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .vendor-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .vendor-card h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .vendor-card p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .request-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgba(255, 0, 0, 0.045);
+            border: 2px solid rgb(255, 145, 0);
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .request-button:hover {
+            background-color: #e65c00;
+        }
+        .add-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgba(255, 0, 0, 0.045);
+            border: 2px solid rgb(255, 145, 0);
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">Gathr</h1>
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="plan event.html">Plan an Event</a></li>
+            <li><a href="My events.html">My Events</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="signup.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+            <h2>Filter Your Search</h2>
+            <div class="filter-section">
+                <h3>By City</h3>
+                <ul>
+                    <li><label><input type="radio" name="city"> Tamil Nadu</label></li>
+                    <li><label><input type="radio" name="city"> Mumbai</label></li>
+                    <li><label><input type="radio" name="city"> Hyderabad</label></li>
+                    <li><label><input type="radio" name="city"> Bangalore</label></li>
+                    <li><label><input type="radio" name="city"> Pune</label></li>
+                    <li><label><input type="radio" name="city"> Kolkata</label></li>
+                    <li><label><input type="radio" name="city"> Jaipur</label></li>
+                    <li><label><input type="radio" name="city"> Delhi</label></li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h3>By Service</h3>
+                <input type="text" placeholder="Type to Search" class="service-search">
+                <ul>
+                    <li><label><input type="checkbox"> Cargo Transport</label></li>
+                    <li><label><input type="checkbox"> Passenger Transport</label></li>
+                    <li><label><input type="checkbox"> Event Logistics</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Vendor List Section -->
+        <section class="vendor-list">
+            <h2>Best Transport & Logistics Services in [Selected Location]</h2>
+            <div class="vendor-card">
+                <img src="trnsprt1.jpeg" alt="Swift Cargo Services">
+                <h3>Swift Cargo Services</h3>
+                <p>Delhi, Cargo Transport</p>
+                <p>Starting Price: ₹15,000</p>
+                <p>Contact: 1234567890</p>
+                <p>Email: example@gmail.com</p>
+                <p>Website: <a href="#">example.com</a></p>
+                <button class="request-button">Request Price</button>
+                <button class="add-button">ADD to my events</button>
+            </div>
+            <div class="vendor-card">
+                <img src="tr.jpg" alt="City Movers">
+                <h3>City Movers</h3>
+                <p>South Extension, Delhi Passenger Transport</p>
+                <p>Starting Price: ₹30,000</p>
+                <p>Contact: 1234567890</p>
+                <p>Email: example@gmail.com</p>
+                <p>Website: <a href="#">example.com</a></p>
+                <button class="request-button">Request Price</button>
+                <button class="add-button">ADD to my events</button>
+            </div>
+            <div class="vendor-card">
+                <img src="trnsprt1.jpeg" alt="Logistics Express">
+                <h3>Logistics Express</h3>
+                <p>Rohini, Event Logistics</p>
+                <p>Starting Price: ₹20,000</p>
+                <p>Contact: 1234567890</p>
+                <p>Email: example@gmail.com</p>
+                <p>Website: <a href="#">example.com</a></p>
+                <button class="request-button">Request Price</button>
+                <button class="add-button">ADD to my events</button>
+            </div>
+            <!-- Add more vendor cards as needed -->
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.162), rgba(154, 138, 14, 0.216)), url('banner3.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar h1.logo {
+            color: white;
+            margin: 0;
+            font-size: 1.8em;
+            font-family: 'Cursive', sans-serif;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1.1em;
+        }
+
+        .nav-links a:hover {
+            color: #d95e18;
+        }
+
+        /* Body and Profile Container Styling */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin-top: 120px; /* Adjusted margin-top to prevent overlap with fixed navbar */
+        }
+
+        .profile-container {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .profile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .profile-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .profile-message {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin-top: 50px;
+        }
+
+        .profile-message h2 {
+            font-size: 28px;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        .profile-message p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Fancy Quote Styling */
+        .fancy-quote {
+            margin-top: 50px;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.8em;
+            color: #333;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
+        }
+
+        .fancy-quote span {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">Gathr</h1>
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="plan event.html">Plan an Event</a></li>
+            <li><a href="My events.html">My Events</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="signup.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-content">
+            <h1 class="profile-title">My Profile</h1>
+            <div class="profile-message">
+                <h2>Currently No Event on Your Calendar</h2>
+                <p>Don't worry! Start planning your next event and we will help you every step of the way!</p>
+            </div>
+
+            <!-- Fancy Quote -->
+            <div class="fancy-quote">
+                <p><span>You made the right choice</span> choosing us to bring your event to life! <br> We’re here to make every moment memorable, <br> from start to finish.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

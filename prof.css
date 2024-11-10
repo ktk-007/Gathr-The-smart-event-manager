@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.navbar {
+    display: flex; /* Flexbox for navigation */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center vertically */
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.162), rgba(154, 138, 14, 0.216)), url('banner3.jpeg'); /* Stylish background */
+    background-size: cover;
+    background-position: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 60px 30px; /* Padding around navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.navbar h1.logo {
+    color: white; /* Logo color */
+    margin: 0; /* Remove default margin */
+    font-size: 1.8em; /* Larger font size for logo */
+    font-family: 'Cursive', sans-serif; /* Fancy font for logo */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for links */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth color transition */
+    font-size: 1.1em; /* Slightly larger font for links */
+}
+
+.nav-links a:hover {
+    color: #d95e18; /* Change color on hover */
+}
+
+.profile-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for profile section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.profile-header {
+    text-align: center; /* Center text */
+    color: #e67e22; /* Color for the profile header */
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between sections */
+    margin-top: 20px; /* Space above */
+}
+
+.profile-info, .profile-settings, .event-history {
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background for detail boxes */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.profile-info:hover, .profile-settings:hover, .event-history:hover {
+    background-color: #e6e6e6; /* Change background color on hover */
+}
+
+h3 {
+    color: #34495e; /* Color for section headers */
+}
+
+.btn-edit, .btn-change-password, .btn-notifications {
+    background-color: #e67e22; /* Button color */
+    color: white; /* Text color */
+    padding: 10px;
+    margin: 5px 0; /* Space between buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-edit:hover, .btn-change-password:hover, .btn-notifications:hover {
+    background-color: #d95e18; /* Darker shade on hover */
+}
+
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: #f5f5f5; /* Light text color */
+    padding: 20px 0; /* Padding in footer */
+    text-align: center; /* Center text */
+    font-family: Arial, sans-serif; /* Font for footer */
+}
+
+.footer-content {
+    margin-bottom: 10px; /* Space below footer content */
+}
+
+.footer-nav a,
+.social-media a {
+    color: #f5f5f5; /* Link color in footer */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space between links */
+}
+
+.footer-nav a:hover,
+.social-media a:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+.social-media {
+    margin-top: 10px; /* Space above social media links */
+}
